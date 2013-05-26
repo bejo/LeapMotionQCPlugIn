@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A20123801750A48F0097A01D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A201237F1750A48F0097A01D /* Cocoa.framework */; };
+		A20123821750A48F0097A01D /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20123811750A48F0097A01D /* Quartz.framework */; };
+		A201238C1750A48F0097A01D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A201238A1750A48F0097A01D /* InfoPlist.strings */; };
+		A20123971750A5E80097A01D /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A20123961750A5E80097A01D /* libLeap.dylib */; };
+		A201239D1750A7270097A01D /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = A201239C1750A7270097A01D /* LeapObjectiveC.mm */; };
+		A20123A01750BD4C0097A01D /* BBBLeapMotionQCPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = A201239F1750BD4C0097A01D /* BBBLeapMotionQCPatch.m */; };
+		A2C36B571750BF4F003F3244 /* libLeap.dylib in Resources */ = {isa = PBXBuildFile; fileRef = A20123961750A5E80097A01D /* libLeap.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A201237C1750A48F0097A01D /* LeapMotion.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = LeapMotion.plugin; path = LeapMotionQCPatch.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		A201237F1750A48F0097A01D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A20123811750A48F0097A01D /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		A20123841750A48F0097A01D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A20123851750A48F0097A01D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A20123861750A48F0097A01D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A20123891750A48F0097A01D /* LeapMotionQCPatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeapMotionQCPatch-Info.plist"; sourceTree = "<group>"; };
+		A201238B1750A48F0097A01D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A20123901750A48F0097A01D /* LeapMotionQCPatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeapMotionQCPatch-Prefix.pch"; sourceTree = "<group>"; };
+		A20123961750A5E80097A01D /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = LeapSDK/lib/libLeap.dylib; sourceTree = "<group>"; };
+		A20123991750A7270097A01D /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Leap.h; path = LeapSDK/include/Leap.h; sourceTree = "<group>"; };
+		A201239A1750A7270097A01D /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapMath.h; path = LeapSDK/include/LeapMath.h; sourceTree = "<group>"; };
+		A201239B1750A7270097A01D /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapObjectiveC.h; path = LeapSDK/include/LeapObjectiveC.h; sourceTree = "<group>"; };
+		A201239C1750A7270097A01D /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LeapObjectiveC.mm; path = LeapSDK/include/LeapObjectiveC.mm; sourceTree = "<group>"; };
+		A201239E1750BD4C0097A01D /* BBBLeapMotionQCPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBBLeapMotionQCPatch.h; sourceTree = "<group>"; };
+		A201239F1750BD4C0097A01D /* BBBLeapMotionQCPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBLeapMotionQCPatch.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A20123781750A48F0097A01D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20123971750A5E80097A01D /* libLeap.dylib in Frameworks */,
+				A20123801750A48F0097A01D /* Cocoa.framework in Frameworks */,
+				A20123821750A48F0097A01D /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A20123721750A48F0097A01D = {
+			isa = PBXGroup;
+			children = (
+				A20123871750A48F0097A01D /* LeapMotionQCPatch */,
+				A201237E1750A48F0097A01D /* Frameworks */,
+				A201237D1750A48F0097A01D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A201237D1750A48F0097A01D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A201237C1750A48F0097A01D /* LeapMotion.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A201237E1750A48F0097A01D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A20123981750A6320097A01D /* LeapMotion */,
+				A201237F1750A48F0097A01D /* Cocoa.framework */,
+				A20123811750A48F0097A01D /* Quartz.framework */,
+				A20123831750A48F0097A01D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A20123831750A48F0097A01D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A20123841750A48F0097A01D /* AppKit.framework */,
+				A20123851750A48F0097A01D /* CoreData.framework */,
+				A20123861750A48F0097A01D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A20123871750A48F0097A01D /* LeapMotionQCPatch */ = {
+			isa = PBXGroup;
+			children = (
+				A201239E1750BD4C0097A01D /* BBBLeapMotionQCPatch.h */,
+				A201239F1750BD4C0097A01D /* BBBLeapMotionQCPatch.m */,
+				A20123881750A48F0097A01D /* Supporting Files */,
+			);
+			path = LeapMotionQCPatch;
+			sourceTree = "<group>";
+		};
+		A20123881750A48F0097A01D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A20123891750A48F0097A01D /* LeapMotionQCPatch-Info.plist */,
+				A201238A1750A48F0097A01D /* InfoPlist.strings */,
+				A20123901750A48F0097A01D /* LeapMotionQCPatch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A20123981750A6320097A01D /* LeapMotion */ = {
+			isa = PBXGroup;
+			children = (
+				A20123991750A7270097A01D /* Leap.h */,
+				A201239A1750A7270097A01D /* LeapMath.h */,
+				A201239B1750A7270097A01D /* LeapObjectiveC.h */,
+				A201239C1750A7270097A01D /* LeapObjectiveC.mm */,
+				A20123961750A5E80097A01D /* libLeap.dylib */,
+			);
+			name = LeapMotion;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A201237B1750A48F0097A01D /* LeapMotionQCPatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A20123931750A48F0097A01D /* Build configuration list for PBXNativeTarget "LeapMotionQCPatch" */;
+			buildPhases = (
+				A20123771750A48F0097A01D /* Sources */,
+				A20123781750A48F0097A01D /* Frameworks */,
+				A20123791750A48F0097A01D /* Resources */,
+				A2C36B581750BF9B003F3244 /* Fix libLeap run path */,
+				A201237A1750A48F0097A01D /* Copy final product to User's QC Plug-Ins directory */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeapMotionQCPatch;
+			productName = LeapMotionQCPatch;
+			productReference = A201237C1750A48F0097A01D /* LeapMotion.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A20123731750A48F0097A01D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = A20123761750A48F0097A01D /* Build configuration list for PBXProject "LeapMotionQCPatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A20123721750A48F0097A01D;
+			productRefGroup = A201237D1750A48F0097A01D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A201237B1750A48F0097A01D /* LeapMotionQCPatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A20123791750A48F0097A01D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2C36B571750BF4F003F3244 /* libLeap.dylib in Resources */,
+				A201238C1750A48F0097A01D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A201237A1750A48F0097A01D /* Copy final product to User's QC Plug-Ins directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy final product to User's QC Plug-Ins directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies the built plug-in to \"~/Library/Graphics/Quartz Composer Plug-Ins\" and overrides any previous version at that location\n\nmkdir -p \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins\"\nrm -rf \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins/LeapMotionQCPatch.plugin\"\ncp -rf \"$BUILT_PRODUCTS_DIR/LeapMotionQCPatch.plugin\" \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins/\"\n";
+		};
+		A2C36B581750BF9B003F3244 /* Fix libLeap run path */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fix libLeap run path";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "install_name_tool -change @loader_path/libLeap.dylib @loader_path/../Resources/libLeap.dylib \"${TARGET_BUILD_DIR}/${TARGET_NAME}.plugin/Contents/MacOS/${TARGET_NAME}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A20123771750A48F0097A01D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A201239D1750A7270097A01D /* LeapObjectiveC.mm in Sources */,
+				A20123A01750BD4C0097A01D /* BBBLeapMotionQCPatch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A201238A1750A48F0097A01D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A201238B1750A48F0097A01D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A20123911750A48F0097A01D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A20123921750A48F0097A01D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A20123941750A48F0097A01D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeapMotionQCPatch/LeapMotionQCPatch-Prefix.pch";
+				INFOPLIST_FILE = "LeapMotionQCPatch/LeapMotionQCPatch-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LeapSDK/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		A20123951750A48F0097A01D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeapMotionQCPatch/LeapMotionQCPatch-Prefix.pch";
+				INFOPLIST_FILE = "LeapMotionQCPatch/LeapMotionQCPatch-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LeapSDK/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A20123761750A48F0097A01D /* Build configuration list for PBXProject "LeapMotionQCPatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20123911750A48F0097A01D /* Debug */,
+				A20123921750A48F0097A01D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A20123931750A48F0097A01D /* Build configuration list for PBXNativeTarget "LeapMotionQCPatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20123941750A48F0097A01D /* Debug */,
+				A20123951750A48F0097A01D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A20123731750A48F0097A01D /* Project object */;
+}

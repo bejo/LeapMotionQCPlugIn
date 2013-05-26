@@ -1,0 +1,6 @@
+//
+// Prefix header for all source files of the 'LeapMotionQCPatch' target in the 'LeapMotionQCPatch' project
+//
+
+#ifdef __OBJC__
+#endif
